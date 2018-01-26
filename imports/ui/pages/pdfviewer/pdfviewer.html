@@ -1,0 +1,16 @@
+<template name="App_pdfviewer">
+  <h1>template for pdfviewer</h1>
+  {{ pdfExample }}
+  <ul>
+    {{#each pdfFiles}}
+      {{>pdf_file}}
+    {{/each}}
+  </ul>
+
+  <canvas id="the-canvas" style="border:1px solid black;"></canvas>
+</template>
+
+
+<template name="pdf_file">
+  {{ name }} - {{ this.url }}
+</template>

@@ -1,0 +1,24 @@
+<template name="App_player">
+  this is the app player template !
+  <br>
+  List of players :
+  <ul>
+    {{#each players}}
+      {{>player}}
+    {{/each}}
+  </ul>
+  <form class="player-add">
+    <div><label for="name">Name :</label><input type="text" name="name" placeholder="Name" required></div>
+    <div><label for="email">Email :</label><input type="email" name="email" placeholder="Email" required></div>
+    <div><label for="avatar">Avatar :</label><input type="file" name="avatar" placeholder="Avatar" required></div>
+    <input type="submit" name="submit" value="Add new player">
+  </form>
+
+  <div>
+    <ul>
+      {{#each playersImages}}
+        {{>player_image}}
+      {{/each}}
+    </ul>
+  </div>
+</template>

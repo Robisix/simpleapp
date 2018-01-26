@@ -1,0 +1,14 @@
+{
+  "name": "fullApp",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --settings settings.json"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "file-system": "^2.2.2",
+    "meteor-node-stubs": "^0.3.2",
+    "pdfjs-dist": "^2.0.288",
+    "webpack": "^3.10.0"
+  }
+}
